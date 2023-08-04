@@ -1,0 +1,86 @@
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    background-color: rgb(43, 48, 53);
+    align-items: center;
+    height: 250px;
+    grid-area: footer;
+
+    .componente_footer {
+        width: 300px;
+    }
+
+    .footerTitles {
+        font-family: 'Bebas Neue', sans-serif;
+        color: rgb(180, 26, 26);
+        font-size: 30px;
+
+    }
+
+    .textoContacto {
+        color: rgb(180, 26, 26);
+
+    }
+
+    .BotonRedes {
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+
+        #Facebook {
+            align-self: start;
+            justify-self: center;
+            border-color: rgb(60, 60, 231);
+
+            &:hover {
+                color: rgb(0, 0, 6);
+                background-color: blue;
+                border-color: blue;
+                transform: scale(1.2);
+            }
+        }
+
+        #Twitter {
+            margin-top: 10px;
+            align-self: start;
+            justify-self: center;
+            border-color: lightblue;
+
+            &:hover {
+                color: rgb(0, 0, 6);
+                background-color: rgb(7, 103, 163);
+                border-color: rgb(7, 103, 163);
+                transform: scale(1.2);
+            }
+        }
+
+        #Instagram {
+            margin-top: 10px;
+            align-self: start;
+            justify-self: center;
+            border-color: purple;
+
+            &:hover {
+                color: rgb(0, 0, 6);
+                background-color: rgb(196, 17, 196);
+                border-color: rgb(196, 17, 196);
+                transform: scale(1.2);
+            }
+        }
+    }
+
+
+    .flechitaUp {
+        color: rgb(180, 26, 26);
+
+        svg {
+            &:hover {
+                transform: scale(1.2);
+            }
+
+        }
+    }
+
+}

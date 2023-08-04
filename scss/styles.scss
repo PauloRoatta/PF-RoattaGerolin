@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,600;1,800&family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,500;0,600;1,800&family=Roboto+Flex:opsz,wght@8..144,500&family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@import 'variables';
+@import 'keyframes';
+
+// CONDICIONALES//
+//Es un if/else muy sencillo pero es el que se me ocurrio, al cambiar el atributo de la variable vista por white o cualquier otro nombre el color de la fuente se hara blanco, si pones de nombre black(por defecto), la fuente sera negra.//
+$font-text-color: black;
+$vista: black;
+
+@if $vista ==black {
+    @media (min-width:1024px) {
+        $font-text-color: black;
+    }
+}
+
+@else {
+    $font-text-color: white;
+}
+
+
+//Aca utilice un MAPS que se ve APLICADO en los botons de redes sociales del FOOTER//
+$redes-sociales: (
+    Facebook: rgb(60, 60, 231),
+    Instagram: purple,
+    Twitter:lightblue,
+);
+
+@each $red-social,
+$color-red in $redes-sociales {
+    ##{$red-social} {
+        background: $color-red;
+    }
+}
+
+//APLIQUE NESTING A TODOS LOS PARTIALS //
+
+
+// MIXIN esta en el partial de Mediaqueries//
+//Las clases creadas con MIXIN  las use con INCLUDE en el partial de Mediaqueries//
+//NO UTILICE EXTEND PORQUE SENTI QUE NO ERA NECESARIO, YA QUE EL MIXIN SE ME HACE MAS COMODO Y SON CASI LO MISMO//
+
+//La unica pagina que fue realizada en su totalidad con el maquetado de bootstrap fue la de CONTACTO (Exceptuando su header y footer), las demas paginas las deje con grid para no arruinar el responsive//
+
+@import 'header';
+@import 'index';
+@import 'pages';
+@import 'Contacto';
+@import 'footer';
+@import 'mediaqueries';

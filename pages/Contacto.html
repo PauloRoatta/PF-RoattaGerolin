@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Images/redstrato.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Contacto | Rock Nacional</title>
+    <meta name="description"
+        content="Aqui puedes colaborar con la página o contactarte con nosotros para informarnos de algun posible error.">
+    <meta name="keywords" content="HTML, ROCK, ROCKARGENTINO, COLABORA, SERVICIO, AYUDA">
+</head>
+
+<body class="BodyContacto">
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR BOOTSTRAP-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark border-bottom border-bottom-dark"
+            data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="titleRock" id="RockNacional" href="../index.html">Rock Nacional</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="links_navbarIni" class="nav-link active" aria-current="page"
+                                href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a id="links_navbarByA" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Bandas Y Artistas
+                            </a>
+                            <ul id="dropdown_rock" class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./Spinetta.html">Luis Alberto Spinetta</a></li>
+                                <li><a class="dropdown-item" href="./Charly Garcia.html">Charly Garcia</a></li>
+                                <li><a class="dropdown-item" href="./Cerati.html">Gustavo Cerati</a></li>
+                                <li><a class="dropdown-item" href="./Los Redondos.html">Los Redondos</a></li>
+                                <li><a class="dropdown-item" href="./Sumo.html">Sumo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a id="links_navbarIni" class="nav-link active" aria-current="page"
+                                href="./Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button id="searchButton_rock" class="btn btn-outline" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <!-- SECCION/TITULO Y TEXTO DE CONTACTO -->
+    <main class="container-fluid">
+        <section class="container-fluid">
+            <div class="row">
+                <h1 class="TitleContacto col-4">Contacto</h1>
+            </div>
+
+            <div class="row">
+                <p class="Texto_Contacto col-12">¡Contáctanos!
+
+                    Estamos emocionados de saber de ti. Si tienes alguna pregunta, sugerencia, comentario o simplemente
+                    deseas saludarnos, no dudes en ponerte en contacto con nuestro equipo. Estamos aquí para ayudarte en
+                    lo que necesites.
+
+                    Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible. Así que
+                    no dudes en compartir tus ideas y opiniones con nosotros.</p>
+            </div>
+
+
+        </section>
+        <!-- SECCION/FORMULARIO Y CARROUSEL -->
+        <section class="sectionFormCarr" class="container-fluid">
+
+            <div class="row">
+                <!-- FORMULARIO -->
+                <form class="formulario_Contacto col-4">
+                    <div class="mb-3">
+                        <label class="TextoFormContact" for="exampleInputEmail1" class="form-label">Nombre</label>
+                        <input id="RellenoFormularioNombre" type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Ej:Pepito">
+                    </div>
+                    <div class="mb-3">
+                        <label class="TextoFormContact" for="exampleInputEmail1" class="form-label">Apellido</label>
+                        <input id="RellenoFormularioApellido" type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Ej:Juarez">
+                    </div>
+                    <div class="mb-3">
+                        <label class="TextoFormContact" for="exampleInputEmail1" class="form-label">Correo
+                            Electronico</label>
+                        <input id="RellenoFormularioCorreo" type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Ej:pepitojuarez234@email.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="TextoFormContact" for="exampleFormControlTextarea1"
+                            class="form-label">Comentario</label>
+                        <textarea id="RellenoFormularioComentario" class="form-control" id="exampleFormControlTextarea1"
+                            rows="3" placeholder="Ej:Muy Buena Paginaa!!!"></textarea>
+                    </div>
+
+                    <button id="BotonForm" type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                <!-- CARROUSEL -->
+                <div id="CarrouseldeContacto" class="Carrousel_Contacto col-6" id="carouselExampleAutoplaying"
+                    class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../Images/Spinetta Carrousel.webp" class="d-block w-100" alt="Spinetta">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/charly Carrousel.webp " class="d-block w-100" alt="CharlyGarcia">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/Cerati Carrusel.webp " class="d-block w-100" alt="Cerati">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/PatricioRey carrousel.webp" class="d-block w-100" alt="LosRedondos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Images/Sumo Carrousel.webp " class="d-block w-100" alt="Sumo">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- Redes Sociales -->
+        <section class="componente_footer">
+            <p class="footerTitles">Redes Sociales</p>
+            <section class="BotonRedes">
+                <a href="https://www.facebook.com/" target="_blank"><button id="Facebook" type="button"
+                        class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Facebook
+                    </button></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><button id="Twitter" type="button"
+                        class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Twitter
+                    </button></a>
+                <a href="https://www.instagram.com/" target="_blank"><button id="Instagram" type="button"
+                        class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Instagram
+                    </button></a>
+
+            </section>
+            <!-- Info-->
+        </section>
+        <section class="componente_footer">
+            <p class="footerTitles">Web developer</p>
+            <p class="textoContacto">Paulo Roatta<br>Estudiante de CoderHouse</p>
+            <!-- FlechaUp-->
+        </section>
+        <section class="componente_footer">
+            <a href="#RockNacional" class="flechitaUp"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                    fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+                </svg></a>
+        </section>
+    </footer>
+
+</body>
+
+</html>

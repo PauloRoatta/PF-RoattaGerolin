@@ -1,0 +1,116 @@
+.BodyContacto {
+    background-color: $background-color;
+
+    .TitleContacto {
+        font-family: 'Bebas Neue', sans-serif;
+        color: $secondary-font-color;
+        font-size: 50px;
+        animation: backInLeft;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        text-shadow: 0 0 2px black;
+        margin-top: 20px;
+    }
+
+    .Texto_Contacto {
+        font-family: 'Bebas Neue', sans-serif;
+        color: $secondary-font-color;
+        font-size: 25px;
+        animation: backInLeft;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+
+    }
+
+    .sectionFormCarr {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-top: 50px;
+        height: 600px;
+
+        #CarrouseldeContacto {
+            margin-top: 45px;
+            animation: backInRight;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+        }
+
+        .formulario_Contacto {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 500px;
+            margin-right: 130px;
+            animation: backInLeft;
+            animation-duration: 0.5s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+
+            .TextoFormContact {
+                font-size: 22px;
+                font-family: 'Bebas Neue', sans-serif;
+                color: $secondary-font-color;
+                font-size: 20px;
+
+            }
+
+            #RellenoFormularioNombre {
+                background-color: rgb(43, 48, 53);
+                border-color: rgb(43, 48, 53);
+                color: white;
+
+                &::placeholder {
+                    color: rgb(116, 113, 113);
+                }
+            }
+
+            #RellenoFormularioApellido {
+                background-color: rgb(43, 48, 53);
+                border-color: rgb(43, 48, 53);
+                color: white;
+
+                &::placeholder {
+                    color: rgb(116, 113, 113);
+                }
+            }
+
+            #RellenoFormularioCorreo {
+                background-color: rgb(43, 48, 53);
+                border-color: rgb(43, 48, 53);
+                color: white;
+
+                &::placeholder {
+                    color: rgb(116, 113, 113);
+                }
+            }
+
+            #RellenoFormularioComentario {
+                background-color: rgb(43, 48, 53);
+                border-color: rgb(43, 48, 53);
+                color: white;
+
+                &::placeholder {
+                    color: rgb(116, 113, 113);
+                }
+            }
+
+            #BotonForm {
+                color: $primary-font-color;
+                font-size: 18px;
+                background-color: rgb(43, 48, 53);
+                border-color: $primary-font-color;
+                font-family: 'Bebas Neue', sans-serif;
+
+                &:hover {
+                    color: Black;
+                    background-color: red;
+
+                }
+            }
+        }
+    }
+}
